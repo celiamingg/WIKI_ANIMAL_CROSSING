@@ -1,0 +1,162 @@
+*
+{
+    padding: 0px;/*Para todos los div*/
+    margin: 0px;/*Para todos los div*/
+
+}
+
+
+
+/*-----------------------------------------------DIV1-----------------------------------------------------------------------------------------------*/
+
+
+.div1{/*WIKI*/
+    background-color: red;/*color fondo*/
+    display: flex;/*contenedor flex para los elementos columnas y filas.*/
+    width: 98%;/*ancho del elemento(en este caso el fondo negro de div1)*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    align-items: center;/*Centra los elementos hijos en el eje secundario.*/
+
+    color: whitesmoke;/*color letras*/
+}
+
+
+
+.div1_1{/*MENU DERECHA*/
+    margin-left: auto;/* empuja el NOMBRE a la derecha */
+}
+
+
+/*-----------------------------------------------DIV2-MENU------------------------------------------------------------------------------------------------*/
+
+/* Contenedor del botón y menú */
+.dropdown{
+    position:relative;         /* referencia para el menú absoluto */
+    margin-left:auto;         /* empuja el menú a la derecha */
+
+}
+
+/* Botón MENÚ */
+.dropbtn{
+    background-image:url('background2.jpg');
+    color:white;              /* texto blanco */
+    padding:20px 50px;        /* tamaño del botón */
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+    cursor:pointer;           /* manita al pasar ratón */
+    font-size:18px;
+}
+
+/* Contenido desplegable (oculto) */
+.dropdown-content{
+    display:none;             /* oculto por defecto */
+    position:absolute;        /* flota debajo del botón */
+    right:0;                  /* alineado a la derecha */
+    background:white;
+    min-width:200px;
+    border-radius:10px;
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    
+    z-index: 9999;   /* esto pone delante elmenu al desplegarse */
+}
+
+/* Cada enlace del menú */
+.dropdown-content a{
+    color:#854343;
+    padding:10px;
+    text-decoration:none;     /* quita subrayado */
+    display:block;            /* ocupa toda la línea */
+}
+
+/* Hover en enlaces */
+.dropdown-content a:hover{
+    background:#e5f5c7;
+}
+
+/* Cuando pasas el ratón por dropdown muestra menú */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+
+
+
+
+.div2 /*NAV PRINCIPAL enlaces palabras*/
+{
+
+    display: flex; /*<- se separan mucho si uso el flex*/
+    /*background-image:url('background2.jpg'); fondo quiero q sea animado para q se vea q caminan*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    
+    /*LETRA*/
+    font-size: 20px;/*letra MAS grande o chica*/
+    font-family: sans-serif;/*tipo de letra*/
+    text-align: center;/*para centrar el texto en medio*/
+
+    white-space: nowrap;   /* Evita que bajen de línea.hace que todos los enlaces estén en una sola línea */
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+
+
+}
+
+
+/*
+.div2 a:hover cambia el color de la palabra cuando ponemos encima el raton
+{
+    color: #0b7519;
+}
+*/
+/*
+.div2 a para que vuelva a ponerse la palabra en blanco una vez quitamos el raton
+{
+    color: #854343;
+    text-decoration: none;Eliminala linea de abajo
+    font-weight: bold;negrita
+    margin-left: auto;empuja el menú a la derecha 
+
+}
+*/
+
+
+
+/*-----------------------------------------------DIV8-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.div8 {
+    position: fixed;   /* Lo saca del flujo normal y lo fija */
+    bottom: 0;         /* Pegado al fondo de la ventana */
+    left: 0;
+    width: 100%;       /* Para que ocupe todo el ancho */
+    height: 10vh;
+    
+    background-image: url('background_final.jfif');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    text-decoration: none; /*Quita la linea que se le pone debajo del boton*/
+
+
+}
+
+
+
+
+

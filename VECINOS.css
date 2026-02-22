@@ -1,0 +1,536 @@
+*
+{
+    padding: 0px;/*Para todos los div*/
+    margin: 0px;/*Para todos los div*/
+
+}
+
+
+
+/*-----------------------------------------------DIV1-----------------------------------------------------------------------------------------------*/
+
+
+.div1{/*WIKI*/
+    background-color: red;/*color fondo*/
+    display: flex;/*contenedor flex para los elementos columnas y filas.*/
+    width: 98%;/*ancho del elemento(en este caso el fondo negro de div1)*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    align-items: center;/*Centra los elementos hijos en el eje secundario.*/
+
+    color: whitesmoke;/*color letras*/
+}
+
+
+
+.div1_1{/*MENU DERECHA*/
+    margin-left: auto;/* empuja el NOMBRE a la derecha */
+}
+
+
+/*-----------------------------------------------DIV2-MENU------------------------------------------------------------------------------------------------*/
+
+/* Contenedor del botón y menú */
+.dropdown{
+    position:relative;         /* referencia para el menú absoluto */
+    margin-left:auto;         /* empuja el menú a la derecha */
+
+}
+
+/* Botón MENÚ */
+.dropbtn{
+    background-image:url('background2.jpg');
+    color:white;              /* texto blanco */
+    padding:20px 50px;        /* tamaño del botón */
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+    cursor:pointer;           /* manita al pasar ratón */
+    font-size:18px;
+}
+
+/* Contenido desplegable (oculto) */
+.dropdown-content{
+    display:none;             /* oculto por defecto */
+    position:absolute;        /* flota debajo del botón */
+    right:0;                  /* alineado a la derecha */
+    background:white;
+    min-width:200px;
+    border-radius:10px;
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    
+    z-index: 9999;   /* esto pone delante elmenu al desplegarse */
+}
+
+/* Cada enlace del menú */
+.dropdown-content a{
+    color:#854343;
+    padding:10px;
+    text-decoration:none;     /* quita subrayado */
+    display:block;            /* ocupa toda la línea */
+}
+
+/* Hover en enlaces */
+.dropdown-content a:hover{
+    background:#e5f5c7;
+}
+
+/* Cuando pasas el ratón por dropdown muestra menú */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+
+
+
+
+.div2 /*NAV PRINCIPAL enlaces palabras*/
+{
+
+    display: flex; /*<- se separan mucho si uso el flex*/
+    /*background-image:url('background2.jpg'); fondo quiero q sea animado para q se vea q caminan*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    
+    /*LETRA*/
+    font-size: 20px;/*letra MAS grande o chica*/
+    font-family: sans-serif;/*tipo de letra*/
+    text-align: center;/*para centrar el texto en medio*/
+
+    white-space: nowrap;   /* Evita que bajen de línea.hace que todos los enlaces estén en una sola línea */
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+
+
+}
+
+
+/*
+.div2 a:hover cambia el color de la palabra cuando ponemos encima el raton
+{
+    color: #0b7519;
+}
+*/
+/*
+.div2 a para que vuelva a ponerse la palabra en blanco una vez quitamos el raton
+{
+    color: #854343;
+    text-decoration: none;Eliminala linea de abajo
+    font-weight: bold;negrita
+    margin-left: auto;empuja el menú a la derecha 
+
+}
+*/
+
+/*-----------------------------------------------DIV3-----VECINOS-------------------------------------------------------------------------------------------*/
+
+
+.div3/*QUE PUYEDES HACER EN ANIMAL CROSSING*/
+{
+
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+/*    flex-direction: column; Coloca los elementos en fila horizontal (de izquierda a derecha)
+    justify-content: center; centra horizontalmente las cajas 
+*/
+    
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 40px;/*espacio dentro del elemento*/
+
+    color: #854343;
+
+}
+
+
+
+
+.div3_1/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_ADELA');
+    background-repeat: no-repeat;     /* que no se repita */
+
+    
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+
+
+.div3_2/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_AGRESTE.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+.div3_3/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_Alba.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+
+
+.div3_4/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_Alderia.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+.div3_5/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_Albino.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: 60vh;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+/*-----------------------------------------------DIV4--------VECINOS----------------------------------------------------------------------------------------*/
+
+
+.div4/*QUE PUYEDES HACER EN ANIMAL CROSSING*/
+{
+
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+/*    flex-direction: column; Coloca los elementos en fila horizontal (de izquierda a derecha)
+    justify-content: center; centra horizontalmente las cajas 
+*/
+    
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 40px;/*espacio dentro del elemento*/
+
+    color: #854343;
+
+}
+
+
+
+
+.div4_1/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_BARBARA.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+    
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+
+
+.div4_2/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_BERTA.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+.div4_3/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_BRISA.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+
+
+.div4_4/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_BROCOLI.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: auto;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+.div4_5/*imagen ANIMAL CROSSING*/
+{   
+    background-image:url('VECINOS_BRUNO.webp');
+    background-repeat: no-repeat;     /* que no se repita */
+
+
+    width: 50%;
+    height: 60vh;
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+}
+
+
+
+
+
+/*-----------------------------------------------DIV5-------------------------------------------------------------------------------------------------*/
+
+
+
+.div5/*TITULO DE LA WIKI*/
+{
+
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*row ->Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 3%;/*espacio dentro del elemento*/
+
+    width: auto;
+    height: auto;
+    margin-top: 0vh;/*Margen de arriba con las imagenes pq es abosluto las img de arriba*/
+
+
+
+    color: #854343;/*Color texto*/
+    text-align: center;/*para centrar el texto en medio*/
+    font-family: sans-serif;/*tipo de letra*/
+
+}
+
+
+
+
+
+.div5_1 /*intro de la WIKI*/
+{
+    
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: row;/*row ->Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 3%;/*espacio dentro del elemento*/
+
+    width: auto;
+    height: auto;
+
+
+
+
+    color: #854343;/*Color texto*/
+    text-align: center;/*para centrar el texto en medio*/
+    font-family: sans-serif;/*tipo de letra*/
+
+}
+
+
+
+/*-----------------------------------------------DIV_FINAL-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.div_FINAL {
+    position: fixed;   /* Lo saca del flujo normal y lo fija */
+    bottom: 0;         /* Pegado al fondo de la ventana */
+    left: 0;
+    width: 100%;       /* Para que ocupe todo el ancho */
+    height: 10vh;
+    
+    background-image: url('background_final.jfif');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    text-decoration: none; /*Quita la linea que se le pone debajo del boton*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------media-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:1300px){
+
+/* HEADER */
+.div1{
+  flex-direction: row;
+}
+
+/* INTRO */
+.div5_1{
+  flex-direction: row;
+}
+
+/* CONTENEDORES DE VECINOS */
+.div3,
+.div4{
+  flex-wrap: wrap;           /* permite filas */
+  justify-content: center;
+}
+
+/* CADA VECINO (2 por fila) */
+.div3_1,
+.div3_2,
+.div3_3,
+.div3_4,
+.div3_5,
+.div4_1,
+.div4_2,
+.div4_3,
+.div4_4,
+.div4_5{
+  width:45%;
+  height:300px;
+  background-size: contain;
+  background-position:center;
+}
+
+/* FOOTER */
+.div_FINAL{
+  position:fixed;
+  height:10vh;
+}
+
+}
+
+
+
+
+/* ================= MODO MÓVIL VECINOS ================= */
+@media screen and (max-width:600px){
+
+/* HEADER */
+.div1{
+  flex-direction: column;
+  text-align: center;
+}
+
+/* BOTÓN MENÚ */
+.dropbtn{
+  padding:10px 20px;
+  font-size:16px;
+}
+
+/* INTRO */
+.div5_1{
+  flex-direction: column;
+  gap:20px;
+}
+
+/* CONTENEDORES DE VECINOS */
+.div3,
+.div4{
+  flex-direction: column;
+}
+
+/* CADA VECINO */
+.div3_1,
+.div3_2,
+.div3_3,
+.div3_4,
+.div3_5,
+.div4_1,
+.div4_2,
+.div4_3,
+.div4_4,
+.div4_5{
+  width:100%;
+  height:250px;
+  background-size: contain;
+  background-position: center;
+}
+
+/* TÍTULOS */
+.div3 h1,
+.div4 h1{
+  font-size:20px;
+}
+
+/* FOOTER */
+.div_FINAL{
+  position: relative;
+  height:auto;
+  padding:20px;
+}
+
+}
+

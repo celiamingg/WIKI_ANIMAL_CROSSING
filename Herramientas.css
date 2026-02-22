@@ -1,0 +1,394 @@
+*
+{
+    padding: 0px;/*Para todos los div*/
+    margin: 0px;/*Para todos los div*/
+
+}
+
+
+
+
+/*-----------------------------------------------DIV1-----------------------------------------------------------------------------------------------*/
+
+
+.div1{/*WIKI*/
+    background-color: red;/*color fondo*/
+    display: flex;/*contenedor flex para los elementos columnas y filas.*/
+    width: 98%;/*ancho del elemento(en este caso el fondo negro de div1)*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    align-items: center;/*Centra los elementos hijos en el eje secundario.*/
+
+    color: whitesmoke;/*color letras*/
+}
+
+
+
+.div1_1{/*MENU DERECHA*/
+    margin-left: auto;/* empuja el NOMBRE a la derecha */
+}
+
+
+/*-----------------------------------------------DIV2-MENU------------------------------------------------------------------------------------------------*/
+
+/* Contenedor del botón y menú */
+.dropdown{
+    position:relative;         /* referencia para el menú absoluto */
+    margin-left:auto;         /* empuja el menú a la derecha */
+
+}
+
+/* Botón MENÚ */
+.dropbtn{
+    background-image:url('background2.jpg');
+    color:white;              /* texto blanco */
+    padding:20px 50px;        /* tamaño del botón */
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+    cursor:pointer;           /* manita al pasar ratón */
+    font-size:18px;
+}
+
+/* Contenido desplegable (oculto) */
+.dropdown-content{
+    display:none;             /* oculto por defecto */
+    position:absolute;        /* flota debajo del botón */
+    right:0;                  /* alineado a la derecha */
+    background:white;
+    min-width:200px;
+    border-radius:10px;
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    
+    z-index: 9999;   /* esto pone delante elmenu al desplegarse */
+}
+
+/* Cada enlace del menú */
+.dropdown-content a{
+    color:#854343;
+    padding:10px;
+    text-decoration:none;     /* quita subrayado */
+    display:block;            /* ocupa toda la línea */
+}
+
+/* Hover en enlaces */
+.dropdown-content a:hover{
+    background:#e5f5c7;
+}
+
+/* Cuando pasas el ratón por dropdown muestra menú */
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+
+
+
+
+.div2 /*NAV PRINCIPAL enlaces palabras*/
+{
+
+    display: flex; /*<- se separan mucho si uso el flex*/
+    /*background-image:url('background2.jpg'); fondo quiero q sea animado para q se vea q caminan*/
+    padding: 1%;/*espacio dentro del elemento*/
+
+    
+    /*LETRA*/
+    font-size: 20px;/*letra MAS grande o chica*/
+    font-family: sans-serif;/*tipo de letra*/
+    text-align: center;/*para centrar el texto en medio*/
+
+    white-space: nowrap;   /* Evita que bajen de línea.hace que todos los enlaces estén en una sola línea */
+    box-shadow:0 8px 16px rgba(0,0,0,.2);
+
+    border:none;              /* quita borde */
+    border-radius:20px;       /* esquinas redondeadas */
+
+
+}
+
+
+/*
+.div2 a:hover cambia el color de la palabra cuando ponemos encima el raton
+{
+    color: #0b7519;
+}
+*/
+/*
+.div2 a para que vuelva a ponerse la palabra en blanco una vez quitamos el raton
+{
+    color: #854343;
+    text-decoration: none;Eliminala linea de abajo
+    font-weight: bold;negrita
+    margin-left: auto;empuja el menú a la derecha 
+
+}
+*/
+
+
+/*-----------------------------------------------DIV3-------------------------------------------------------------------------------------------------*/
+
+
+.div3/*EXPRESIONES*/
+{
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: row;/*row ->Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    flex-wrap: wrap;       /* SALTO a otra fila */
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 40px;
+    padding: 40px;/*espacio dentro del elemento*/
+
+
+
+
+
+
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    width: auto;
+    height: auto;/*TAMAÑO DEL FONDO*/
+
+    color: #854343;
+
+    color: #53b660;
+
+
+
+}
+
+
+/*CENTRA EL TEXTO*/
+td{
+    text-align: center;   /* centra horizontalmente */
+    vertical-align: middle; /* centra verticalmente */
+}
+
+
+
+/*para centrar solo la imagen*/
+td img{
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+/*-----------------------------------------------DIV4-------------------------------------------------------------------------------------------------*/
+
+
+
+.div4/*TITULO DE LA WIKI*/
+{
+
+
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: column;/*row ->Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 3%;/*espacio dentro del elemento*/
+
+    width: auto;
+    height: auto;
+
+
+
+    color: #854343;/*Color texto*/
+    text-align: center;/*para centrar el texto en medio*/
+    font-family: sans-serif;/*tipo de letra*/
+
+}
+
+
+
+
+
+.div4_1 /*intro de la WIKI*/
+{
+    
+    display: flex;/*Convierte el contenedor en un contenedor flexible (Flexbox).Permite alinear elementos fácilmente vertical y horizontalmente*/
+    flex-direction: row;/*row ->Coloca los elementos en fila horizontal (de izquierda a derecha)*/
+    justify-content: center;/* centra horizontalmente las cajas */
+
+    background-image:url('background2.jpg'); /*fondo quiero q sea animado para q se vea q caminan*/
+    padding: 3%;/*espacio dentro del elemento*/
+
+    width: auto;
+    height: auto;
+
+
+
+
+    color: #854343;/*Color texto*/
+    text-align: center;/*para centrar el texto en medio*/
+    font-family: sans-serif;/*tipo de letra*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------DIV_FINAL-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.div_FINAL {
+    position: fixed;   /* Lo saca del flujo normal y lo fija */
+    bottom: 0;         /* Pegado al fondo de la ventana */
+    left: 0;
+    width: 100%;       /* Para que ocupe todo el ancho */
+    height: 10vh;
+    
+    background-image: url('background_final.jfif');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    text-decoration: none; /*Quita la linea que se le pone debajo del boton*/
+
+
+}
+
+
+
+
+
+
+/*-----------------------------------------------media-------------------------------------------------------------------------------------------------*/
+
+/* ================= MODO MÓVIL HERRAMIENTAS ================= */
+@media screen and (max-width:600px){
+
+/* HEADER */
+.div1{
+  flex-direction: column;
+  text-align:center;
+}
+
+/* BOTÓN MENÚ */
+.dropbtn{
+  padding:10px 20px;
+  font-size:16px;
+}
+
+/* INTRO */
+.div4_1{
+  flex-direction: column;
+  gap:20px;
+}
+
+/* CONTENEDOR TABLAS */
+.div3{
+  flex-direction: column;
+  gap:20px;
+}
+
+/* CADA TABLA */
+.div3 table{
+  width:100%;
+}
+
+/* IMÁGENES */
+td img{
+  width:120px;
+}
+
+/* TEXTOS */
+td h1{
+  font-size:16px;
+}
+
+/* FOOTER */
+.div_FINAL{
+  position:relative;
+  height:auto;
+  padding:20px;
+}
+
+}
+
+
+/* ================= MODO PC HERRAMIENTAS ================= */
+@media screen and (min-width:601px) and (max-width:1300px){
+
+/* HEADER */
+.div1{
+  flex-direction: row;
+}
+
+/* INTRO */
+.div4_1{
+  flex-direction: row;
+}
+
+/* CONTENEDOR TABLAS */
+.div3{
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+/* TABLAS (2 por fila) */
+.div3 table{
+  width:45%;
+}
+
+/* IMÁGENES */
+td img{
+  width:160px;
+}
+
+/* FOOTER */
+.div_FINAL{
+  position:fixed;
+  height:10vh;
+}
+
+}
